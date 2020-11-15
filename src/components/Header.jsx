@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import React, { useState, useEffect } from "react"
 import HeaderImage from "./../images/heading-img.png"
-export default ({ headerObj: { textImage, redirectUrl }, options }) => {
+export default ({ headerObj, options }) => {
   const scrolldiv = eleId => {
     window.scrollTo({
       top: findPosition(document.getElementById(eleId)) - 80,
@@ -20,8 +20,8 @@ export default ({ headerObj: { textImage, redirectUrl }, options }) => {
 
   return (
     <header>
-      <Link to={redirectUrl}>
-        {<img src={textImage} alt="sanjana jagganathan" />}
+      <Link to={headerObj?.redirectUrl}>
+        {<img src={headerObj?.textImage} alt="sanjana jagganathan" />}
       </Link>
       <nav>
         <select
@@ -29,11 +29,12 @@ export default ({ headerObj: { textImage, redirectUrl }, options }) => {
           id="nav-select"
           onChange={e => scrolldiv(e.target.value)}
         >
-          {options.map((item, idx) => (
-            <option key={idx} value={item.value}>
-              {item.label}
-            </option>
-          ))}
+          {!!options &&
+            options.map((item, idx) => (
+              <option key={idx} value={item.value}>
+                {item.label}
+              </option>
+            ))}
         </select>
       </nav>
     </header>

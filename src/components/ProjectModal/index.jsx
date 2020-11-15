@@ -1,12 +1,12 @@
 import React from "react"
-import Header from "../Header"
+import HeaderComponent from "../Header"
 import HeaderImage from "./../../images/heading-img.png"
 
 export default () => {
   return (
     <div className="project-modal">
       <div className="project-modal__header">
-        <Header
+        <HeaderComponent
           headerObj={{ textImage: HeaderImage, redirectUrl: "/" }}
           options={[
             { label: "overview", value: "overview" },

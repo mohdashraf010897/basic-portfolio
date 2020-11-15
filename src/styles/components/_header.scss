@@ -1,0 +1,33 @@
+header {
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 30px;
+  background-color: $color-primary;
+
+  a {
+    height: 28px;
+
+    img {
+      margin-right: 122px;
+    }
+  }
+
+  #nav-select {
+    font-family: Bendicion;
+    width: 473px;
+    height: 35px;
+    border-color: #767676;
+    border-width: 2px;
+    border-radius: 3px;
+    option {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      color: #000000;
+    }
+  }
+}

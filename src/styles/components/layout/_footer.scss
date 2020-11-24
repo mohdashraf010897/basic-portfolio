@@ -1,0 +1,30 @@
+footer {
+  height: 63px;
+  width: 100%;
+  padding: 0 59px;
+  ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    li {
+      filter: opacity(50%);
+      padding-top: 12px;
+      width: 293px;
+      border-top: 3px solid $color-dark-text;
+      text-align: center;
+      a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: Untitled Sans;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 25px;
+        color: $color-dark-text;
+      }
+    }
+
+    .active-link {
+      filter: opacity(100%);
+    }
+  }
+}

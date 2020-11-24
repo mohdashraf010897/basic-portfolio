@@ -1,0 +1,34 @@
+.about-page {
+  height: 100%;
+  padding: 50px 106px 20px;
+
+  &__lhs {
+    width: 48vw;
+    margin-right: 68px;
+    font-family: Untitled Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 40px;
+    color: $color-dark-text;
+    p {
+      &:first-child {
+        margin-bottom: 56px;
+      }
+
+      &:last-child {
+      }
+    }
+  }
+
+  &__rhs {
+    width: 398px;
+    height: 426px;
+    flex-shrink: 0;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}

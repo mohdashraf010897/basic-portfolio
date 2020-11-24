@@ -1,8 +1,8 @@
 import React from "react"
-import Collage from "./../components/Collage"
+import Collage from "../components/Collage-old"
 import HeaderImage from "./../images/heading-img.png"
 import "./../styles/index.scss"
-import HeaderComponent from "./../components/Header"
+import HeaderComponent from "../components/Header"
 const IndexPage = () => (
   <div>
     <HeaderComponent

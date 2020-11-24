@@ -1,7 +1,26 @@
+* {
+  box-sizing: border-box !important;
+}
 body {
   width: 100vw;
-  min-height: 100vh;
-  overflow-y: scroll;
+  height: 100vh;
   color: $color-dark-text;
   scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+.center-v-h {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.center-v {
+  display: flex;
+  align-items: center;
+}
+
+.center-h {
+  display: flex;
+  justify-content: center;
 }

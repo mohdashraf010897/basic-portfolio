@@ -1,7 +1,15 @@
 @import "./reset";
 @import "./variables";
 @import "./main-page";
+@import "./core";
 
 /*--------------------COMPONENTS-----------------*/
 @import "./components/collage";
 @import "./components/header";
+@import "./components/layout/index";
+@import "./components/layout/footer";
+
+/*--------------------PAGES-----------------*/
+@import "./pages/home_page";
+@import "./pages/contact";
+@import "./pages/about";

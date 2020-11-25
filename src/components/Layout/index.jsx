@@ -3,7 +3,6 @@ import Footer from "./Footer"
 import { Link } from "gatsby"
 
 const Layout = ({ children, location }) => {
-  console.log(location)
   return (
     <div className="layout-container">
       <Link to="/">

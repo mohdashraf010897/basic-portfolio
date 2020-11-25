@@ -1,8 +1,10 @@
 .about-page {
   height: 100%;
   padding: 50px 106px 20px;
+  opacity: 0;
 
   &__lhs {
+    opacity: 0;
     width: 48vw;
     margin-right: 68px;
     font-family: Untitled Sans;

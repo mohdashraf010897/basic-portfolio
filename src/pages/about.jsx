@@ -1,11 +1,28 @@
-import GatsbyImage from "gatsby-image"
-import React from "react"
+import React, { useRef, useEffect } from "react"
 import Image from "./../images/photo-landing-page.png"
+import { TweenMax, Power3 } from "gsap"
 
 const About = () => {
+  let aboutRootEle = useRef(null)
+  let aboutLhsEle = useRef(null)
+
+  useEffect(() => {
+    TweenMax.fromTo(
+      aboutRootEle,
+      0.8,
+      { opacity: 0 },
+      { opacity: 1, ease: Power3.easeInOut }
+    )
+    TweenMax.fromTo(
+      aboutLhsEle,
+      0.8,
+      { opacity: 0 },
+      { opacity: 1, ease: Power3.easeInOut, delay: 0.4 }
+    )
+  }, [])
   return (
-    <div className="about-page center-h ">
-      <div className="about-page__lhs">
+    <div ref={ele => (aboutRootEle = ele)} className="about-page center-h ">
+      <div ref={ele => (aboutLhsEle = ele)} className="about-page__lhs">
         <p>
           I’m originally from Singapore and have grown up in and lived in seven
           different countries! I moved to NYC in July 2019 to pursue my MSc in
